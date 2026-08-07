@@ -1,0 +1,23 @@
+Data Profiling Summary — olist_order_payments_dataset
+Run: 20260804_221350
+Generated at: 2026-08-04T22:13:57.367798
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 103886
+Columns: 5
+Duplicate rows: 0 (0.0%)
+Memory usage: 16.2294 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 100.0
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      100.0
+
+WARNINGS (1)
+------------------------------------------------------------
+[LOW] HIGH_CARDINALITY (order_id): Column 'order_id' has high cardinality (95.72% unique values); consider whether it is an identifier rather than a categorical field.

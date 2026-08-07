@@ -1,0 +1,9 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+order_id,object,categorical,0,0.0,99441,100.0
+customer_id,object,categorical,0,0.0,99441,100.0
+order_status,object,categorical,0,0.0,8,0.01
+order_purchase_timestamp,object,categorical,0,0.0,98875,99.43
+order_approved_at,object,categorical,160,0.16,90733,91.39
+order_delivered_carrier_date,object,categorical,1783,1.79,81018,82.96
+order_delivered_customer_date,object,categorical,2965,2.98,95664,99.16
+order_estimated_delivery_date,object,categorical,0,0.0,459,0.46

@@ -1,0 +1,24 @@
+Data Profiling Summary — product_category_name_translation
+Run: 20260804_124725
+Generated at: 2026-08-04T12:47:35.680342
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 71
+Columns: 2
+Duplicate rows: 0 (0.0%)
+Memory usage: 0.009 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 100.0
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      100.0
+
+WARNINGS (2)
+------------------------------------------------------------
+[LOW] HIGH_CARDINALITY (product_category_name): Column 'product_category_name' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.
+[LOW] HIGH_CARDINALITY (product_category_name_english): Column 'product_category_name_english' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.

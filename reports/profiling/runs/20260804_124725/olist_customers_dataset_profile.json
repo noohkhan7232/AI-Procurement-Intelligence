@@ -1,0 +1,188 @@
+{
+  "profile": {
+    "dataset_name": "olist_customers_dataset",
+    "overview": {
+      "row_count": 99441,
+      "column_count": 5,
+      "column_names": [
+        "customer_id",
+        "customer_unique_id",
+        "customer_zip_code_prefix",
+        "customer_city",
+        "customer_state"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 27877866,
+      "memory_usage_mb": 26.5864
+    },
+    "columns": {
+      "customer_id": {
+        "name": "customer_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 99441,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "274fa6071e5e17fe303b9748641082c8": 1,
+            "e5ed7280cd1a3ac2ba29fd6650d8867c": 1,
+            "c6ece8a5137f3c9c3a3a12302a19a2ac": 1,
+            "821a7275a08f32975caceff2e08ea262": 1,
+            "5eef6cce1f34954c9e7004332388ccc7": 1,
+            "be631308cb609ff74d0e0fb54815e18c": 1,
+            "a1b5ca506b592bb72d4caadcbfe71385": 1,
+            "30c96385d694acb8aa2dc0df1770120b": 1,
+            "b7c889215de76857c7967c1011125d2d": 1,
+            "c156d63bdfce1d456bd43cf1c4dadfca": 1
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "customer_unique_id": {
+        "name": "customer_unique_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 96096,
+        "unique_percentage": 96.64,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "8d50f5eadf50201ccdcedfb9e2ac8455": 17,
+            "3e43e6105506432c953e165fb2acf44c": 9,
+            "6469f99c1f9dfae7733b25662e7f1782": 7,
+            "ca77025e7201e3b30c44b472ff346268": 7,
+            "1b6c7548a2a1f9037c1fd3ddfed95f33": 7,
+            "12f5d6e1cbf93dafd9dcc19095df0b3d": 6,
+            "dc813062e0fc23409cd255f7f53c7074": 6,
+            "47c1a3033b8b77b3ab6e109eb4d5fdf3": 6,
+            "de34b16117594161a6a89c50b289d35a": 6,
+            "63cfc61cee11cbe306bff5857d00bfe4": 6
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "customer_zip_code_prefix": {
+        "name": "customer_zip_code_prefix",
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 14994,
+        "unique_percentage": 15.08,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 1003.0,
+          "max": 99990.0,
+          "mean": 35137.47458291851,
+          "median": 24416.0,
+          "std": 29797.938996206118,
+          "q25": 11347.0,
+          "q75": 58900.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "customer_city": {
+        "name": "customer_city",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 4119,
+        "unique_percentage": 4.14,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "sao paulo": 15540,
+            "rio de janeiro": 6882,
+            "belo horizonte": 2773,
+            "brasilia": 2131,
+            "curitiba": 1521,
+            "campinas": 1444,
+            "porto alegre": 1379,
+            "salvador": 1245,
+            "guarulhos": 1189,
+            "sao bernardo do campo": 938
+          },
+          "min_length": 3,
+          "max_length": 32,
+          "average_length": 10.34
+        }
+      },
+      "customer_state": {
+        "name": "customer_state",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 27,
+        "unique_percentage": 0.03,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "SP": 41746,
+            "RJ": 12852,
+            "MG": 11635,
+            "RS": 5466,
+            "PR": 5045,
+            "SC": 3637,
+            "BA": 3380,
+            "DF": 2140,
+            "ES": 2033,
+            "GO": 2020
+          },
+          "min_length": 2,
+          "max_length": 2,
+          "average_length": 2.0
+        }
+      }
+    },
+    "primary_key_candidates": [
+      "customer_id"
+    ],
+    "foreign_key_candidates": [
+      "customer_zip_code_prefix"
+    ],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_customers_dataset",
+    "scores": {
+      "completeness_score": 100.0,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 100.0
+    },
+    "warnings": [
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "customer_id",
+        "message": "Column 'customer_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 99441,
+          "unique_percentage": 100.0
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "customer_unique_id",
+        "message": "Column 'customer_unique_id' has high cardinality (96.64% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 96096,
+          "unique_percentage": 96.64
+        }
+      }
+    ],
+    "warning_count": 2
+  },
+  "generated_at": "2026-08-04T12:47:26.876787",
+  "run_timestamp": "20260804_124725"
+}

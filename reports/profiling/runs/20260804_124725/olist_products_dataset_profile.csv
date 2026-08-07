@@ -1,0 +1,10 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+product_id,object,categorical,0,0.0,32951,100.0
+product_category_name,object,categorical,610,1.85,73,0.23
+product_name_lenght,float64,numeric,610,1.85,66,0.2
+product_description_lenght,float64,numeric,610,1.85,2960,9.15
+product_photos_qty,float64,numeric,610,1.85,19,0.06
+product_weight_g,float64,numeric,2,0.01,2204,6.69
+product_length_cm,float64,numeric,2,0.01,99,0.3
+product_height_cm,float64,numeric,2,0.01,102,0.31
+product_width_cm,float64,numeric,2,0.01,95,0.29

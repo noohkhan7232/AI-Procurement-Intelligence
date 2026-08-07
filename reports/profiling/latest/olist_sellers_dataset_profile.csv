@@ -1,0 +1,5 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+seller_id,object,categorical,0,0.0,3095,100.0
+seller_zip_code_prefix,int64,numeric,0,0.0,2246,72.57
+seller_city,object,categorical,0,0.0,611,19.74
+seller_state,object,categorical,0,0.0,23,0.74

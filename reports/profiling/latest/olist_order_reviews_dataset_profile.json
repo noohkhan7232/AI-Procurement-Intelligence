@@ -1,0 +1,268 @@
+{
+  "profile": {
+    "dataset_name": "olist_order_reviews_dataset",
+    "overview": {
+      "row_count": 99224,
+      "column_count": 7,
+      "column_names": [
+        "review_id",
+        "order_id",
+        "review_score",
+        "review_comment_title",
+        "review_comment_message",
+        "review_creation_date",
+        "review_answer_timestamp"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 41025302,
+      "memory_usage_mb": 39.1248
+    },
+    "columns": {
+      "review_id": {
+        "name": "review_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 98410,
+        "unique_percentage": 99.18,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "08528f70f579f0c830189efc523d2182": 3,
+            "c444278834184f72b1484dfe47de7f97": 3,
+            "39b4603793c1c7f5f36d809b4a218664": 3,
+            "44e9f871226d8a130de3fc39dfbdf0c5": 3,
+            "1fb4ddc969e6bea80e38deec00393a6f": 3,
+            "2d6ac45f859465b5c185274a1c929637": 3,
+            "f4bb9d6dd4fb6dcc2298f0e7b17b8e1e": 3,
+            "2172867fd5b1a55f98fe4608e1547b4b": 3,
+            "32415bbf6e341d5d517080a796f79b5c": 3,
+            "7b606b0d57b078384f0b58eac1d41d78": 3
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "order_id": {
+        "name": "order_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 98673,
+        "unique_percentage": 99.44,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "df56136b8031ecd28e200bb18e6ddb2e": 3,
+            "c88b1d1b157a9999ce368f218a407141": 3,
+            "03c939fd7fd3b38f8485a0f95798f1f6": 3,
+            "8e17072ec97ce29f0e1f111e598b0c85": 3,
+            "029863af4b968de1e5d6a82782e662f5": 2,
+            "29062384ce4975f78aeba6a496510386": 2,
+            "bbf6a647ecc68aa5e79d2cd75ef44c68": 2,
+            "7f13a20e25350f4a55fb2a7c9a2e8d88": 2,
+            "aef2bc3845eb581cecce74b769d46c6a": 2,
+            "0ed5043fe7d3f4f88353697330bbc020": 2
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "review_score": {
+        "name": "review_score",
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 5,
+        "unique_percentage": 0.01,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 1.0,
+          "max": 5.0,
+          "mean": 4.08642062404257,
+          "median": 5.0,
+          "std": 1.3475791311150982,
+          "q25": 4.0,
+          "q75": 5.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "review_comment_title": {
+        "name": "review_comment_title",
+        "dtype": "object",
+        "missing_count": 87656,
+        "missing_percentage": 88.34,
+        "unique_count": 4527,
+        "unique_percentage": 39.13,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "Recomendo": 423,
+            "recomendo": 345,
+            "Bom": 293,
+            "super recomendo": 270,
+            "Excelente": 248,
+            "Muito bom": 247,
+            "\u00d3timo": 240,
+            "Super recomendo": 217,
+            "\u00d3timo ": 207,
+            "Otimo": 174
+          },
+          "min_length": 1,
+          "max_length": 26,
+          "average_length": 11.95
+        }
+      },
+      "review_comment_message": {
+        "name": "review_comment_message",
+        "dtype": "object",
+        "missing_count": 58247,
+        "missing_percentage": 58.7,
+        "unique_count": 36159,
+        "unique_percentage": 88.24,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "Muito bom": 230,
+            "Bom": 189,
+            "muito bom": 122,
+            "bom": 107,
+            "Recomendo": 100,
+            "Otimo": 99,
+            "otimo": 96,
+            "\u00d3timo": 77,
+            "\u00d3timo ": 74,
+            "Ok": 72
+          },
+          "min_length": 1,
+          "max_length": 208,
+          "average_length": 68.64
+        }
+      },
+      "review_creation_date": {
+        "name": "review_creation_date",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 636,
+        "unique_percentage": 0.64,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2017-12-19 00:00:00": 463,
+            "2018-08-28 00:00:00": 452,
+            "2017-12-20 00:00:00": 440,
+            "2018-05-19 00:00:00": 434,
+            "2018-05-15 00:00:00": 425,
+            "2018-08-14 00:00:00": 423,
+            "2018-03-29 00:00:00": 421,
+            "2018-05-22 00:00:00": 414,
+            "2018-05-04 00:00:00": 412,
+            "2018-04-12 00:00:00": 408
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      },
+      "review_answer_timestamp": {
+        "name": "review_answer_timestamp",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 98248,
+        "unique_percentage": 99.02,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2017-06-15 23:21:05": 4,
+            "2017-09-02 12:13:03": 3,
+            "2018-02-26 15:53:18": 3,
+            "2018-02-23 10:58:06": 3,
+            "2018-03-21 01:02:05": 3,
+            "2018-06-17 23:48:04": 3,
+            "2017-09-05 12:12:51": 3,
+            "2018-08-31 22:29:09": 3,
+            "2017-02-14 13:58:48": 3,
+            "2018-09-03 09:33:00": 3
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      }
+    },
+    "primary_key_candidates": [],
+    "foreign_key_candidates": [],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_order_reviews_dataset",
+    "scores": {
+      "completeness_score": 78.99,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 93.7
+    },
+    "warnings": [
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "review_id",
+        "message": "Column 'review_id' has high cardinality (99.18% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 98410,
+          "unique_percentage": 99.18
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "order_id",
+        "message": "Column 'order_id' has high cardinality (99.44% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 98673,
+          "unique_percentage": 99.44
+        }
+      },
+      {
+        "warning_type": "HIGH_MISSING_VALUES",
+        "severity": "MEDIUM",
+        "column": "review_comment_title",
+        "message": "Column 'review_comment_title' has 88.34% missing values.",
+        "details": {
+          "missing_count": 87656,
+          "missing_percentage": 88.34
+        }
+      },
+      {
+        "warning_type": "HIGH_MISSING_VALUES",
+        "severity": "MEDIUM",
+        "column": "review_comment_message",
+        "message": "Column 'review_comment_message' has 58.7% missing values.",
+        "details": {
+          "missing_count": 58247,
+          "missing_percentage": 58.7
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "review_answer_timestamp",
+        "message": "Column 'review_answer_timestamp' has high cardinality (99.02% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 98248,
+          "unique_percentage": 99.02
+        }
+      }
+    ],
+    "warning_count": 5
+  },
+  "generated_at": "2026-08-05T16:07:42.938576",
+  "run_timestamp": "20260805_160735"
+}

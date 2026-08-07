@@ -1,0 +1,6 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+customer_id,object,categorical,0,0.0,99441,100.0
+customer_unique_id,object,categorical,0,0.0,96096,96.64
+customer_zip_code_prefix,int64,numeric,0,0.0,14994,15.08
+customer_city,object,categorical,0,0.0,4119,4.14
+customer_state,object,categorical,0,0.0,27,0.03

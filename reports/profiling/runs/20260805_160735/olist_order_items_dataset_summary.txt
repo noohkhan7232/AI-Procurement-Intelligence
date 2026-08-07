@@ -1,0 +1,23 @@
+Data Profiling Summary — olist_order_items_dataset
+Run: 20260805_160735
+Generated at: 2026-08-05T16:07:41.228679
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 112650
+Columns: 7
+Duplicate rows: 0 (0.0%)
+Memory usage: 35.9896 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 100.0
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      100.0
+
+WARNINGS (0)
+------------------------------------------------------------
+No warnings detected.

@@ -1,0 +1,6 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+geolocation_zip_code_prefix,int64,numeric,0,0.0,19015,1.9
+geolocation_lat,float64,numeric,0,0.0,717360,71.72
+geolocation_lng,float64,numeric,0,0.0,717613,71.75
+geolocation_city,object,categorical,0,0.0,8011,0.8
+geolocation_state,object,categorical,0,0.0,27,0.0

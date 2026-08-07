@@ -1,0 +1,23 @@
+Data Profiling Summary — olist_geolocation_dataset
+Run: 20260804_221350
+Generated at: 2026-08-04T22:13:55.891175
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 1000163
+Columns: 5
+Duplicate rows: 261831 (26.18%)
+Memory usage: 130.2649 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 100.0
+Uniqueness:   73.82
+Consistency:  100.0
+Validity:     100.0
+Overall:      93.45
+
+WARNINGS (1)
+------------------------------------------------------------
+[HIGH] DUPLICATE_RECORDS (dataset-level): 261831 duplicate rows detected (26.18% of dataset).

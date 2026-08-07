@@ -1,0 +1,24 @@
+Data Profiling Summary — olist_customers_dataset
+Run: 20260804_124725
+Generated at: 2026-08-04T12:47:27.198622
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 99441
+Columns: 5
+Duplicate rows: 0 (0.0%)
+Memory usage: 26.5864 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 100.0
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      100.0
+
+WARNINGS (2)
+------------------------------------------------------------
+[LOW] HIGH_CARDINALITY (customer_id): Column 'customer_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.
+[LOW] HIGH_CARDINALITY (customer_unique_id): Column 'customer_unique_id' has high cardinality (96.64% unique values); consider whether it is an identifier rather than a categorical field.

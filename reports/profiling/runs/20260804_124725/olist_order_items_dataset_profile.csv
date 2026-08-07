@@ -1,0 +1,8 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+order_id,object,categorical,0,0.0,98666,87.59
+order_item_id,int64,numeric,0,0.0,21,0.02
+product_id,object,categorical,0,0.0,32951,29.25
+seller_id,object,categorical,0,0.0,3095,2.75
+shipping_limit_date,object,categorical,0,0.0,93318,82.84
+price,float64,numeric,0,0.0,5968,5.3
+freight_value,float64,numeric,0,0.0,6999,6.21

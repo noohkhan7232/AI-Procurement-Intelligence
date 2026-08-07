@@ -1,0 +1,164 @@
+{
+  "profile": {
+    "dataset_name": "olist_geolocation_dataset",
+    "overview": {
+      "row_count": 1000163,
+      "column_count": 5,
+      "column_names": [
+        "geolocation_zip_code_prefix",
+        "geolocation_lat",
+        "geolocation_lng",
+        "geolocation_city",
+        "geolocation_state"
+      ],
+      "duplicate_row_count": 261831,
+      "duplicate_row_percentage": 26.18,
+      "memory_usage_bytes": 136592627,
+      "memory_usage_mb": 130.2649
+    },
+    "columns": {
+      "geolocation_zip_code_prefix": {
+        "name": "geolocation_zip_code_prefix",
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 19015,
+        "unique_percentage": 1.9,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 1001.0,
+          "max": 99990.0,
+          "mean": 36574.16646586607,
+          "median": 26530.0,
+          "std": 30549.335710319865,
+          "q25": 11075.0,
+          "q75": 63504.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "geolocation_lat": {
+        "name": "geolocation_lat",
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 717360,
+        "unique_percentage": 71.72,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": -36.6053744107061,
+          "max": 45.06593318269697,
+          "mean": -21.176152910383966,
+          "median": -22.91937749486411,
+          "std": 5.715866308822852,
+          "q25": -23.60354554038031,
+          "q75": -19.97962033957529,
+          "zero_count": 0,
+          "negative_count": 998827
+        }
+      },
+      "geolocation_lng": {
+        "name": "geolocation_lng",
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 717613,
+        "unique_percentage": 71.75,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": -101.46676644931476,
+          "max": 121.10539381057764,
+          "mean": -46.39054132093579,
+          "median": -46.63787866960149,
+          "std": 4.269748306619603,
+          "q25": -48.573172180526896,
+          "q75": -43.7677088028139,
+          "zero_count": 0,
+          "negative_count": 1000160
+        }
+      },
+      "geolocation_city": {
+        "name": "geolocation_city",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 8011,
+        "unique_percentage": 0.8,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "sao paulo": 135800,
+            "rio de janeiro": 62151,
+            "belo horizonte": 27805,
+            "s\u00e3o paulo": 24918,
+            "curitiba": 16593,
+            "porto alegre": 13521,
+            "salvador": 11865,
+            "guarulhos": 11340,
+            "brasilia": 10470,
+            "sao bernardo do campo": 8112
+          },
+          "min_length": 2,
+          "max_length": 38,
+          "average_length": 10.47
+        }
+      },
+      "geolocation_state": {
+        "name": "geolocation_state",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 27,
+        "unique_percentage": 0.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "SP": 404268,
+            "MG": 126336,
+            "RJ": 121169,
+            "RS": 61851,
+            "PR": 57859,
+            "SC": 38328,
+            "BA": 36045,
+            "GO": 20139,
+            "ES": 16748,
+            "PE": 16432
+          },
+          "min_length": 2,
+          "max_length": 2,
+          "average_length": 2.0
+        }
+      }
+    },
+    "primary_key_candidates": [],
+    "foreign_key_candidates": [
+      "geolocation_zip_code_prefix"
+    ],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_geolocation_dataset",
+    "scores": {
+      "completeness_score": 100.0,
+      "uniqueness_score": 73.82,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 93.45
+    },
+    "warnings": [
+      {
+        "warning_type": "DUPLICATE_RECORDS",
+        "severity": "HIGH",
+        "column": null,
+        "message": "261831 duplicate rows detected (26.18% of dataset).",
+        "details": {
+          "duplicate_count": 261831,
+          "duplicate_percentage": 26.18
+        }
+      }
+    ],
+    "warning_count": 1
+  },
+  "generated_at": "2026-08-04T12:47:30.905832",
+  "run_timestamp": "20260804_124725"
+}

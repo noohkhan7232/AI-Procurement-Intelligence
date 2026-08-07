@@ -1,0 +1,23 @@
+Data Profiling Summary — olist_sellers_dataset
+Run: 20260804_221350
+Generated at: 2026-08-04T22:14:00.824996
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 3095
+Columns: 4
+Duplicate rows: 0 (0.0%)
+Memory usage: 0.5881 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 100.0
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      100.0
+
+WARNINGS (1)
+------------------------------------------------------------
+[LOW] HIGH_CARDINALITY (seller_id): Column 'seller_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.

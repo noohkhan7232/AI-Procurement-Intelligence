@@ -1,0 +1,209 @@
+{
+  "profile": {
+    "dataset_name": "olist_order_items_dataset",
+    "overview": {
+      "row_count": 112650,
+      "column_count": 7,
+      "column_names": [
+        "order_id",
+        "order_item_id",
+        "product_id",
+        "seller_id",
+        "shipping_limit_date",
+        "price",
+        "freight_value"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 37737882,
+      "memory_usage_mb": 35.9896
+    },
+    "columns": {
+      "order_id": {
+        "name": "order_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 98666,
+        "unique_percentage": 87.59,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "8272b63d03f5f79c56e9e4120aec44ef": 21,
+            "1b15974a0141d54e36626dca3fdc731a": 20,
+            "ab14fdcfbe524636d65ee38360e22ce8": 20,
+            "9ef13efd6949e4573a18964dd1bbe7f5": 15,
+            "428a2f660dc84138d969ccd69a0ab6d5": 15,
+            "9bdc4d4c71aa1de4606060929dee888c": 14,
+            "73c8ab38f07dc94389065f7eba4f297a": 14,
+            "37ee401157a3a0b28c9c6d0ed8c3b24b": 13,
+            "af822dacd6f5cff7376413c03a388bb7": 12,
+            "3a213fcdfe7d98be74ea0dc05a8b31ae": 12
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "order_item_id": {
+        "name": "order_item_id",
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 21,
+        "unique_percentage": 0.02,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 1.0,
+          "max": 21.0,
+          "mean": 1.1978339991122948,
+          "median": 1.0,
+          "std": 0.7051240313951733,
+          "q25": 1.0,
+          "q75": 1.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "product_id": {
+        "name": "product_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 32951,
+        "unique_percentage": 29.25,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "aca2eb7d00ea1a7b8ebd4e68314663af": 527,
+            "99a4788cb24856965c36a24e339b6058": 488,
+            "422879e10f46682990de24d770e7f83d": 484,
+            "389d119b48cf3043d311335e499d9c6b": 392,
+            "368c6c730842d78016ad823897a372db": 388,
+            "53759a2ecddad2bb87a079a1f1519f73": 373,
+            "d1c427060a0f73f6b889a5c7c61f2ac4": 343,
+            "53b36df67ebb7c41585e8d54d6772e08": 323,
+            "154e7e31ebfa092203795c972e5804a6": 281,
+            "3dd2a17168ec895c781a9191c1e95ad7": 274
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "seller_id": {
+        "name": "seller_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 3095,
+        "unique_percentage": 2.75,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "6560211a19b47992c3666cc44a7e94c0": 2033,
+            "4a3ca9315b744ce9f8e9374361493884": 1987,
+            "1f50f920176fa81dab994f9023523100": 1931,
+            "cc419e0650a3c5ba77189a1882b7556a": 1775,
+            "da8622b14eb17ae2831f4ac5b9dab84a": 1551,
+            "955fee9216a65b617aa5c0531780ce60": 1499,
+            "1025f0e2d44d7041d6cf58b6550e0bfa": 1428,
+            "7c67e1448b00f6e969d365cea6b010ab": 1364,
+            "ea8482cd71df3c1969d7b9473ff13abc": 1203,
+            "7a67c85e85bb2ce8582c35f2203ad736": 1171
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "shipping_limit_date": {
+        "name": "shipping_limit_date",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 93318,
+        "unique_percentage": 82.84,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2017-07-21 18:25:23": 21,
+            "2018-03-01 02:50:48": 21,
+            "2017-08-30 14:30:23": 20,
+            "2017-12-21 02:30:41": 15,
+            "2017-11-30 10:30:51": 15,
+            "2017-02-03 21:44:49": 15,
+            "2018-02-28 11:48:12": 14,
+            "2018-06-13 17:30:35": 13,
+            "2018-04-25 22:11:43": 13,
+            "2018-04-19 02:30:52": 13
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      },
+      "price": {
+        "name": "price",
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 5968,
+        "unique_percentage": 5.3,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 0.85,
+          "max": 6735.0,
+          "mean": 120.65373901464716,
+          "median": 74.99,
+          "std": 183.63392805025939,
+          "q25": 39.9,
+          "q75": 134.9,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "freight_value": {
+        "name": "freight_value",
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 6999,
+        "unique_percentage": 6.21,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 0.0,
+          "max": 409.68,
+          "mean": 19.990319928983578,
+          "median": 16.26,
+          "std": 15.806405412297083,
+          "q25": 13.08,
+          "q75": 21.15,
+          "zero_count": 383,
+          "negative_count": 0
+        }
+      }
+    },
+    "primary_key_candidates": [],
+    "foreign_key_candidates": [
+      "order_id",
+      "product_id",
+      "seller_id"
+    ],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_order_items_dataset",
+    "scores": {
+      "completeness_score": 100.0,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 100.0
+    },
+    "warnings": [],
+    "warning_count": 0
+  },
+  "generated_at": "2026-08-05T16:07:41.129187",
+  "run_timestamp": "20260805_160735"
+}

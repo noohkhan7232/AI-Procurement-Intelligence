@@ -1,0 +1,302 @@
+{
+  "profile": {
+    "dataset_name": "olist_orders_dataset",
+    "overview": {
+      "row_count": 99441,
+      "column_count": 8,
+      "column_names": [
+        "order_id",
+        "customer_id",
+        "order_status",
+        "order_purchase_timestamp",
+        "order_approved_at",
+        "order_delivered_carrier_date",
+        "order_delivered_customer_date",
+        "order_estimated_delivery_date"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 55508758,
+      "memory_usage_mb": 52.9373
+    },
+    "columns": {
+      "order_id": {
+        "name": "order_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 99441,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "66dea50a8b16d9b4dee7af250b4be1a5": 1,
+            "6ec4642f9993cc34f826cfb9068e5a2f": 1,
+            "38e9133ce29f6bbe35aed9c3863dce01": 1,
+            "dfc6eb45a2753ed9e6c6ef4987b44503": 1,
+            "6f46d42016226f77893ed3978d6903d0": 1,
+            "f9e3402be5a5ea63344347582ca9f45f": 1,
+            "1b4a0e6b19d0034b531655b41ea89623": 1,
+            "788541a19c0791de0504c5a9cb7e7bd5": 1,
+            "e6cc57f923c4dab2222b8c9aa8742eea": 1,
+            "c627fe35fce1a754bc5b812d0b8ff379": 1
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "customer_id": {
+        "name": "customer_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 99441,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "edb027a75a1449115f6b43211ae02a24": 1,
+            "f00bb12620b7b232233cace1b229db18": 1,
+            "ad312389a098ceff46ce92c4595c06d0": 1,
+            "a046c690e0564ffde0ce611b5eee2c30": 1,
+            "3803547f820b1e10b7ad9c7985f06753": 1,
+            "6f2cf56878f7f82151b0ad02590192c0": 1,
+            "ce5efd1b1d8a2fa290a871edd5c26cd6": 1,
+            "a537aaf902d2f436eb7f44817154bb68": 1,
+            "2f4a42f9bb4b9a8cd402fa549df5c7fd": 1,
+            "42b0671b440d1f2527bddd8b723e0a0c": 1
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "order_status": {
+        "name": "order_status",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 8,
+        "unique_percentage": 0.01,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "delivered": 96478,
+            "shipped": 1107,
+            "canceled": 625,
+            "unavailable": 609,
+            "invoiced": 314,
+            "processing": 301,
+            "created": 5,
+            "approved": 2
+          },
+          "min_length": 7,
+          "max_length": 11,
+          "average_length": 8.98
+        }
+      },
+      "order_purchase_timestamp": {
+        "name": "order_purchase_timestamp",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 98875,
+        "unique_percentage": 99.43,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2018-08-02 12:05:26": 3,
+            "2018-07-28 13:11:22": 3,
+            "2018-02-19 15:37:47": 3,
+            "2018-08-02 12:06:09": 3,
+            "2018-03-31 15:08:21": 3,
+            "2017-11-20 11:46:30": 3,
+            "2018-04-11 10:48:14": 3,
+            "2017-11-20 10:59:08": 3,
+            "2018-08-02 12:06:07": 3,
+            "2018-06-01 13:39:44": 3
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      },
+      "order_approved_at": {
+        "name": "order_approved_at",
+        "dtype": "object",
+        "missing_count": 160,
+        "missing_percentage": 0.16,
+        "unique_count": 90733,
+        "unique_percentage": 91.39,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2018-02-27 04:31:10": 9,
+            "2017-12-05 10:30:42": 7,
+            "2018-02-06 05:31:52": 7,
+            "2017-11-07 07:30:38": 7,
+            "2017-11-07 07:30:29": 7,
+            "2018-07-05 16:33:01": 7,
+            "2018-01-10 10:32:03": 7,
+            "2018-02-27 04:31:01": 7,
+            "2018-07-27 04:05:17": 6,
+            "2018-02-27 04:31:04": 6
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      },
+      "order_delivered_carrier_date": {
+        "name": "order_delivered_carrier_date",
+        "dtype": "object",
+        "missing_count": 1783,
+        "missing_percentage": 1.79,
+        "unique_count": 81018,
+        "unique_percentage": 82.96,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2018-05-09 15:48:00": 47,
+            "2018-05-10 18:29:00": 32,
+            "2018-05-07 12:31:00": 21,
+            "2018-05-02 15:15:00": 16,
+            "2018-07-24 16:07:00": 16,
+            "2018-08-08 15:01:00": 15,
+            "2018-05-16 13:44:00": 15,
+            "2018-08-03 15:10:00": 15,
+            "2018-07-17 14:16:00": 15,
+            "2018-05-17 15:06:00": 14
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      },
+      "order_delivered_customer_date": {
+        "name": "order_delivered_customer_date",
+        "dtype": "object",
+        "missing_count": 2965,
+        "missing_percentage": 2.98,
+        "unique_count": 95664,
+        "unique_percentage": 99.16,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2018-05-08 19:36:48": 3,
+            "2018-05-14 20:02:44": 3,
+            "2018-05-08 23:38:46": 3,
+            "2016-10-27 17:32:07": 3,
+            "2018-07-24 21:36:42": 3,
+            "2017-06-19 18:47:51": 3,
+            "2017-12-02 00:26:45": 3,
+            "2018-02-14 21:09:19": 3,
+            "2017-05-13 09:37:37": 2,
+            "2018-01-08 22:04:15": 2
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      },
+      "order_estimated_delivery_date": {
+        "name": "order_estimated_delivery_date",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 459,
+        "unique_percentage": 0.46,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "2017-12-20 00:00:00": 522,
+            "2018-03-12 00:00:00": 516,
+            "2018-05-29 00:00:00": 513,
+            "2018-03-13 00:00:00": 513,
+            "2018-02-14 00:00:00": 507,
+            "2017-12-18 00:00:00": 493,
+            "2018-03-06 00:00:00": 492,
+            "2018-05-28 00:00:00": 492,
+            "2018-02-06 00:00:00": 491,
+            "2018-04-12 00:00:00": 490
+          },
+          "min_length": 19,
+          "max_length": 19,
+          "average_length": 19.0
+        }
+      }
+    },
+    "primary_key_candidates": [
+      "order_id",
+      "customer_id"
+    ],
+    "foreign_key_candidates": [],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_orders_dataset",
+    "scores": {
+      "completeness_score": 99.38,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 99.81
+    },
+    "warnings": [
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "order_id",
+        "message": "Column 'order_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 99441,
+          "unique_percentage": 100.0
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "customer_id",
+        "message": "Column 'customer_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 99441,
+          "unique_percentage": 100.0
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "order_purchase_timestamp",
+        "message": "Column 'order_purchase_timestamp' has high cardinality (99.43% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 98875,
+          "unique_percentage": 99.43
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "order_approved_at",
+        "message": "Column 'order_approved_at' has high cardinality (91.39% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 90733,
+          "unique_percentage": 91.39
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "order_delivered_customer_date",
+        "message": "Column 'order_delivered_customer_date' has high cardinality (99.16% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 95664,
+          "unique_percentage": 99.16
+        }
+      }
+    ],
+    "warning_count": 5
+  },
+  "generated_at": "2026-08-04T12:47:35.275889",
+  "run_timestamp": "20260804_124725"
+}

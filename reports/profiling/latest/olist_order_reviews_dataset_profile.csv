@@ -1,0 +1,8 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+review_id,object,categorical,0,0.0,98410,99.18
+order_id,object,categorical,0,0.0,98673,99.44
+review_score,int64,numeric,0,0.0,5,0.01
+review_comment_title,object,categorical,87656,88.34,4527,39.13
+review_comment_message,object,categorical,58247,58.7,36159,88.24
+review_creation_date,object,categorical,0,0.0,636,0.64
+review_answer_timestamp,object,categorical,0,0.0,98248,99.02

@@ -1,0 +1,27 @@
+Data Profiling Summary — olist_order_reviews_dataset
+Run: 20260804_221350
+Generated at: 2026-08-04T22:13:58.531699
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 99224
+Columns: 7
+Duplicate rows: 0 (0.0%)
+Memory usage: 39.1248 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 78.99
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      93.7
+
+WARNINGS (5)
+------------------------------------------------------------
+[LOW] HIGH_CARDINALITY (review_id): Column 'review_id' has high cardinality (99.18% unique values); consider whether it is an identifier rather than a categorical field.
+[LOW] HIGH_CARDINALITY (order_id): Column 'order_id' has high cardinality (99.44% unique values); consider whether it is an identifier rather than a categorical field.
+[MEDIUM] HIGH_MISSING_VALUES (review_comment_title): Column 'review_comment_title' has 88.34% missing values.
+[MEDIUM] HIGH_MISSING_VALUES (review_comment_message): Column 'review_comment_message' has 58.7% missing values.
+[LOW] HIGH_CARDINALITY (review_answer_timestamp): Column 'review_answer_timestamp' has high cardinality (99.02% unique values); consider whether it is an identifier rather than a categorical field.

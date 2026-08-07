@@ -1,0 +1,6 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+order_id,object,categorical,0,0.0,99440,95.72
+payment_sequential,int64,numeric,0,0.0,29,0.03
+payment_type,object,categorical,0,0.0,5,0.0
+payment_installments,int64,numeric,0,0.0,24,0.02
+payment_value,float64,numeric,0,0.0,29077,27.99

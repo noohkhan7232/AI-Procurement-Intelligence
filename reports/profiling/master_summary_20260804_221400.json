@@ -1,0 +1,163 @@
+{
+  "pipeline": "AI Procurement Intelligence Platform - Execution Pipeline",
+  "run_started_at": "2026-08-04T22:13:50.974853",
+  "run_duration_seconds": 9.9653,
+  "datasets_discovered": 9,
+  "datasets_succeeded": 9,
+  "datasets_failed": 0,
+  "results": [
+    {
+      "dataset_name": "olist_customers_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_customers_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 1.5032,
+      "row_count": 99441,
+      "column_count": 5,
+      "overall_quality_score": 100.0,
+      "warning_count": 2,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_customers_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_customers_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_customers_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_customers_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_geolocation_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_geolocation_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 3.4108,
+      "row_count": 1000163,
+      "column_count": 5,
+      "overall_quality_score": 93.45,
+      "warning_count": 1,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_geolocation_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_geolocation_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_geolocation_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_geolocation_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_order_items_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_order_items_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 0.9597,
+      "row_count": 112650,
+      "column_count": 7,
+      "overall_quality_score": 100.0,
+      "warning_count": 0,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_items_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_items_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_items_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_items_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_order_payments_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_order_payments_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 0.4904,
+      "row_count": 103886,
+      "column_count": 5,
+      "overall_quality_score": 100.0,
+      "warning_count": 1,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_payments_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_payments_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_payments_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_payments_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_order_reviews_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_order_reviews_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 1.1596,
+      "row_count": 99224,
+      "column_count": 7,
+      "overall_quality_score": 93.7,
+      "warning_count": 5,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_reviews_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_reviews_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_reviews_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_order_reviews_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_orders_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_orders_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 1.781,
+      "row_count": 99441,
+      "column_count": 8,
+      "overall_quality_score": 99.81,
+      "warning_count": 5,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_orders_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_orders_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_orders_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_orders_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_products_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_products_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 0.3634,
+      "row_count": 32951,
+      "column_count": 9,
+      "overall_quality_score": 99.75,
+      "warning_count": 1,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_products_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_products_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_products_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_products_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "olist_sellers_dataset",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\olist_sellers_dataset.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 0.123,
+      "row_count": 3095,
+      "column_count": 4,
+      "overall_quality_score": 100.0,
+      "warning_count": 1,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_sellers_dataset_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_sellers_dataset_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_sellers_dataset_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\olist_sellers_dataset_summary.txt"
+      },
+      "error_message": null
+    },
+    {
+      "dataset_name": "product_category_name_translation",
+      "file_path": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\data\\raw\\v1\\olist\\product_category_name_translation.csv",
+      "status": "SUCCESS",
+      "duration_seconds": 0.1072,
+      "row_count": 71,
+      "column_count": 2,
+      "overall_quality_score": 100.0,
+      "warning_count": 2,
+      "report_paths": {
+        "csv": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\product_category_name_translation_profile.csv",
+        "excel": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\product_category_name_translation_profile.xlsx",
+        "json": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\product_category_name_translation_profile.json",
+        "summary": "C:\\Users\\noohk\\Videos\\AI-Procurement-Intelligence\\reports\\profiling\\runs\\20260804_221350\\product_category_name_translation_summary.txt"
+      },
+      "error_message": null
+    }
+  ]
+}
