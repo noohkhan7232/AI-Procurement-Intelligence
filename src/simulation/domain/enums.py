@@ -1,0 +1,152 @@
+"""Domain enums for Phase 03.3 Enterprise Transaction Simulation Engine.
+
+Provides strongly-typed enumerations for transaction states, business event types,
+anomaly types, scale profiles, currencies, and evidence statuses across all simulation domains.
+"""
+
+from enum import Enum, auto
+
+
+class ScaleProfile(str, Enum):
+    """Scale configuration profiles controlling simulation entity/transaction volumes."""
+
+    SMALL = "small"
+    MEDIUM = "medium"
+    LARGE = "large"
+    ENTERPRISE = "enterprise"
+
+
+class TransactionState(str, Enum):
+    """Lifecycle states for operational transactions."""
+
+    DRAFT = "DRAFT"
+    SUBMITTED = "SUBMITTED"
+    PENDING_APPROVAL = "PENDING_APPROVAL"
+    APPROVED = "APPROVED"
+    REJECTED = "REJECTED"
+    PROCESSING = "PROCESSING"
+    COMPLETED = "COMPLETED"
+    PARTIALLY_COMPLETED = "PARTIALLY_COMPLETED"
+    CANCELLED = "CANCELLED"
+    REVERSED = "REVERSED"
+    CLOSED = "CLOSED"
+
+
+class EventType(str, Enum):
+    """Business event types produced during process execution."""
+
+    # P2P Events
+    PURCHASE_REQUISITION_CREATED = "PURCHASE_REQUISITION_CREATED"
+    PURCHASE_ORDER_CREATED = "PURCHASE_ORDER_CREATED"
+    GOODS_RECEIVED = "GOODS_RECEIVED"
+    INVOICE_CREATED = "INVOICE_CREATED"
+    INVOICE_APPROVED = "INVOICE_APPROVED"
+    PAYMENT_RELEASED = "PAYMENT_RELEASED"
+    PURCHASE_RETURNED = "PURCHASE_RETURNED"
+    CREDIT_NOTE_ISSUED = "CREDIT_NOTE_ISSUED"
+
+    # O2C Events
+    SALES_ORDER_CREATED = "SALES_ORDER_CREATED"
+    ORDER_CONFIRMED = "ORDER_CONFIRMED"
+    SHIPMENT_CREATED = "SHIPMENT_CREATED"
+    DELIVERY_COMPLETED = "DELIVERY_COMPLETED"
+    CUSTOMER_INVOICE_CREATED = "CUSTOMER_INVOICE_CREATED"
+    CUSTOMER_PAYMENT_RECEIVED = "CUSTOMER_PAYMENT_RECEIVED"
+    SALES_RETURNED = "SALES_RETURNED"
+    REFUND_ISSUED = "REFUND_ISSUED"
+
+    # Inventory Events
+    INVENTORY_RECEIVED = "INVENTORY_RECEIVED"
+    INVENTORY_ISSUED = "INVENTORY_ISSUED"
+    INVENTORY_TRANSFERRED = "INVENTORY_TRANSFERRED"
+    INVENTORY_ADJUSTED = "INVENTORY_ADJUSTED"
+    STOCK_RESERVED = "STOCK_RESERVED"
+    STOCK_RELEASED = "STOCK_RELEASED"
+    CYCLE_COUNT_COMPLETED = "CYCLE_COUNT_COMPLETED"
+    INVENTORY_WRITTEN_OFF = "INVENTORY_WRITTEN_OFF"
+
+    # Expense Events
+    EXPENSE_SUBMITTED = "EXPENSE_SUBMITTED"
+    EXPENSE_APPROVED = "EXPENSE_APPROVED"
+    REIMBURSEMENT_ISSUED = "REIMBURSEMENT_ISSUED"
+    EXPENSE_REVERSED = "EXPENSE_REVERSED"
+
+    # Payroll Events
+    PAYROLL_PERIOD_OPENED = "PAYROLL_PERIOD_OPENED"
+    PAYROLL_PROCESSED = "PAYROLL_PROCESSED"
+    PAYROLL_APPROVED = "PAYROLL_APPROVED"
+    PAYROLL_DISBURSED = "PAYROLL_DISBURSED"
+
+    # Asset Events
+    ASSET_ACQUIRED = "ASSET_ACQUIRED"
+    ASSET_REGISTERED = "ASSET_REGISTERED"
+    ASSET_ASSIGNED = "ASSET_ASSIGNED"
+    ASSET_TRANSFERRED = "ASSET_TRANSFERRED"
+    ASSET_DEPRECIATED = "ASSET_DEPRECIATED"
+    ASSET_DISPOSED = "ASSET_DISPOSED"
+    ASSET_WRITTEN_OFF = "ASSET_WRITTEN_OFF"
+
+    # Accounting Events
+    JOURNAL_ENTRY_POSTED = "JOURNAL_ENTRY_POSTED"
+
+
+class AnomalyType(str, Enum):
+    """Supported audit anomaly injection categories."""
+
+    DUPLICATE_INVOICE = "DUPLICATE_INVOICE"
+    DUPLICATE_PAYMENT = "DUPLICATE_PAYMENT"
+    INVOICE_AMOUNT_MISMATCH = "INVOICE_AMOUNT_MISMATCH"
+    PO_INVOICE_MISMATCH = "PO_INVOICE_MISMATCH"
+    UNAUTHORIZED_APPROVAL = "UNAUTHORIZED_APPROVAL"
+    PAYMENT_BEFORE_APPROVAL = "PAYMENT_BEFORE_APPROVAL"
+    UNUSUAL_EXPENSE = "UNUSUAL_EXPENSE"
+    INVENTORY_ADJUSTMENT_ANOMALY = "INVENTORY_ADJUSTMENT_ANOMALY"
+    NEGATIVE_INVENTORY_EXCEPTION = "NEGATIVE_INVENTORY_EXCEPTION"
+    GHOST_EMPLOYEE_PATTERN = "GHOST_EMPLOYEE_PATTERN"
+    PAYROLL_ANOMALY = "PAYROLL_ANOMALY"
+    UNUSUAL_VENDOR_ACTIVITY = "UNUSUAL_VENDOR_ACTIVITY"
+    SUSPICIOUS_TRANSACTION_TIMING = "SUSPICIOUS_TRANSACTION_TIMING"
+    SPLIT_PURCHASE = "SPLIT_PURCHASE"
+    ROUND_DOLLAR_TRANSACTION = "ROUND_DOLLAR_TRANSACTION"
+    POLICY_THRESHOLD_VIOLATION = "POLICY_THRESHOLD_VIOLATION"
+
+
+class AnomalySeverity(str, Enum):
+    """Severity classification for injected anomalies."""
+
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+
+class Currency(str, Enum):
+    """Supported transaction & base currencies."""
+
+    USD = "USD"
+    EUR = "EUR"
+    GBP = "GBP"
+    BRL = "BRL"
+    JPY = "JPY"
+    CAD = "CAD"
+    AUD = "AUD"
+
+
+class EvidenceStatus(str, Enum):
+    """Status for generated audit evidence records."""
+
+    GENERATED = "GENERATED"
+    VERIFIED = "VERIFIED"
+    ARCHIVED = "ARCHIVED"
+    FLAGGED = "FLAGGED"
+
+
+__all__ = [
+    "ScaleProfile",
+    "TransactionState",
+    "EventType",
+    "AnomalyType",
+    "AnomalySeverity",
+    "Currency",
+    "EvidenceStatus",
+]

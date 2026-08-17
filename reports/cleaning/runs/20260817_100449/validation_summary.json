@@ -1,0 +1,424 @@
+{
+  "run_timestamp": "20260817_100449",
+  "datasets": {
+    "olist_customers_dataset": {
+      "dataset_name": "olist_customers_dataset",
+      "rules_evaluated": 4,
+      "total_violations": 6342,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__customer_id",
+          "description": "Column 'customer_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__customer_id",
+          "description": "Column 'customer_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "primary_key_not_null__customer_unique_id",
+          "description": "Column 'customer_unique_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__customer_unique_id",
+          "description": "Column 'customer_unique_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 6342,
+          "violation_percentage": 6.38,
+          "sample_violation_indices": [
+            "5",
+            "8",
+            "13",
+            "32",
+            "33",
+            "42",
+            "88",
+            "113",
+            "116",
+            "132"
+          ],
+          "error": null
+        }
+      ]
+    },
+    "olist_geolocation_dataset": {
+      "dataset_name": "olist_geolocation_dataset",
+      "rules_evaluated": 0,
+      "total_violations": 0,
+      "rules": []
+    },
+    "olist_order_items_dataset": {
+      "dataset_name": "olist_order_items_dataset",
+      "rules_evaluated": 10,
+      "total_violations": 343110,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__order_id",
+          "description": "Column 'order_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__order_id",
+          "description": "Column 'order_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 23787,
+          "violation_percentage": 21.12,
+          "sample_violation_indices": [
+            "13",
+            "14",
+            "32",
+            "33",
+            "34",
+            "42",
+            "43",
+            "44",
+            "48",
+            "49"
+          ],
+          "error": null
+        },
+        {
+          "rule_name": "primary_key_not_null__order_item_id",
+          "description": "Column 'order_item_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__order_item_id",
+          "description": "Column 'order_item_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 112649,
+          "violation_percentage": 100.0,
+          "sample_violation_indices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "error": null
+        },
+        {
+          "rule_name": "primary_key_not_null__product_id",
+          "description": "Column 'product_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__product_id",
+          "description": "Column 'product_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 94533,
+          "violation_percentage": 83.92,
+          "sample_violation_indices": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "error": null
+        },
+        {
+          "rule_name": "primary_key_not_null__seller_id",
+          "description": "Column 'seller_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__seller_id",
+          "description": "Column 'seller_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 112141,
+          "violation_percentage": 99.55,
+          "sample_violation_indices": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10"
+          ],
+          "error": null
+        },
+        {
+          "rule_name": "non_negative__price",
+          "description": "Column 'price' must not contain negative values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "non_negative__freight_value",
+          "description": "Column 'freight_value' must not contain negative values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        }
+      ]
+    },
+    "olist_order_payments_dataset": {
+      "dataset_name": "olist_order_payments_dataset",
+      "rules_evaluated": 3,
+      "total_violations": 7407,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__order_id",
+          "description": "Column 'order_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__order_id",
+          "description": "Column 'order_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 7407,
+          "violation_percentage": 7.13,
+          "sample_violation_indices": [
+            "25",
+            "35",
+            "75",
+            "84",
+            "102",
+            "121",
+            "139",
+            "161",
+            "164",
+            "166"
+          ],
+          "error": null
+        },
+        {
+          "rule_name": "non_negative__payment_value",
+          "description": "Column 'payment_value' must not contain negative values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        }
+      ]
+    },
+    "olist_order_reviews_dataset": {
+      "dataset_name": "olist_order_reviews_dataset",
+      "rules_evaluated": 4,
+      "total_violations": 2701,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__review_id",
+          "description": "Column 'review_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__review_id",
+          "description": "Column 'review_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 1603,
+          "violation_percentage": 1.62,
+          "sample_violation_indices": [
+            "200",
+            "344",
+            "346",
+            "360",
+            "393",
+            "433",
+            "508",
+            "661",
+            "723",
+            "764"
+          ],
+          "error": null
+        },
+        {
+          "rule_name": "primary_key_not_null__order_id",
+          "description": "Column 'order_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__order_id",
+          "description": "Column 'order_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 1098,
+          "violation_percentage": 1.11,
+          "sample_violation_indices": [
+            "30",
+            "344",
+            "498",
+            "764",
+            "778",
+            "854",
+            "1023",
+            "1028",
+            "1030",
+            "1055"
+          ],
+          "error": null
+        }
+      ]
+    },
+    "olist_orders_dataset": {
+      "dataset_name": "olist_orders_dataset",
+      "rules_evaluated": 4,
+      "total_violations": 0,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__order_id",
+          "description": "Column 'order_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__order_id",
+          "description": "Column 'order_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "primary_key_not_null__customer_id",
+          "description": "Column 'customer_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__customer_id",
+          "description": "Column 'customer_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        }
+      ]
+    },
+    "olist_products_dataset": {
+      "dataset_name": "olist_products_dataset",
+      "rules_evaluated": 3,
+      "total_violations": 0,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__product_id",
+          "description": "Column 'product_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__product_id",
+          "description": "Column 'product_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "non_negative__product_photos_qty",
+          "description": "Column 'product_photos_qty' must not contain negative values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        }
+      ]
+    },
+    "olist_sellers_dataset": {
+      "dataset_name": "olist_sellers_dataset",
+      "rules_evaluated": 2,
+      "total_violations": 0,
+      "rules": [
+        {
+          "rule_name": "primary_key_not_null__seller_id",
+          "description": "Column 'seller_id' (primary key) must not contain nulls.",
+          "severity": "CRITICAL",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        },
+        {
+          "rule_name": "unique_id__seller_id",
+          "description": "Column 'seller_id' must not contain duplicate values.",
+          "severity": "HIGH",
+          "violation_count": 0,
+          "violation_percentage": 0.0,
+          "sample_violation_indices": [],
+          "error": null
+        }
+      ]
+    },
+    "product_category_name_translation": {
+      "dataset_name": "product_category_name_translation",
+      "rules_evaluated": 0,
+      "total_violations": 0,
+      "rules": []
+    }
+  }
+}

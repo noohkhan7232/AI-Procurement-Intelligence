@@ -1,6 +1,6 @@
 Data Profiling Summary — olist_order_payments_dataset
-Run: 20260805_160735
-Generated at: 2026-08-05T16:07:41.913551
+Run: 20260817_100308
+Generated at: 2026-08-17T10:03:15.482451
 ============================================================
 
 OVERVIEW

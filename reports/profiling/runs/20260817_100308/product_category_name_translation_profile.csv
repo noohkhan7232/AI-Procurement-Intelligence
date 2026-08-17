@@ -1,0 +1,3 @@
+column_name,dtype,semantic_type,missing_count,missing_percentage,unique_count,unique_percentage
+product_category_name,object,categorical,0,0.0,71,100.0
+product_category_name_english,object,categorical,0,0.0,71,100.0

@@ -1,0 +1,547 @@
+{
+  "run_timestamp": "20260817_100449",
+  "datasets": {
+    "olist_customers_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_customers_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_customers_dataset",
+        "columns_converted": 5,
+        "columns": {
+          "customer_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "customer_unique_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "customer_zip_code_prefix": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "customer_city": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "customer_state": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_geolocation_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_geolocation_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_geolocation_dataset",
+        "columns_converted": 5,
+        "columns": {
+          "geolocation_zip_code_prefix": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "geolocation_lat": {
+            "original_dtype": "float64",
+            "target_dtype": "FLOAT",
+            "resulting_dtype": "float64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "geolocation_lng": {
+            "original_dtype": "float64",
+            "target_dtype": "FLOAT",
+            "resulting_dtype": "float64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "geolocation_city": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "geolocation_state": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_order_items_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_order_items_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_order_items_dataset",
+        "columns_converted": 7,
+        "columns": {
+          "order_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_item_id": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_id": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "seller_id": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "shipping_limit_date": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "price": {
+            "original_dtype": "float64",
+            "target_dtype": "FLOAT",
+            "resulting_dtype": "float64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "freight_value": {
+            "original_dtype": "float64",
+            "target_dtype": "FLOAT",
+            "resulting_dtype": "float64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_order_payments_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_order_payments_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_order_payments_dataset",
+        "columns_converted": 5,
+        "columns": {
+          "order_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "payment_sequential": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "payment_type": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "payment_installments": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "payment_value": {
+            "original_dtype": "float64",
+            "target_dtype": "FLOAT",
+            "resulting_dtype": "float64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_order_reviews_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_order_reviews_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_order_reviews_dataset",
+        "columns_converted": 7,
+        "columns": {
+          "review_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "review_score": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "review_comment_title": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "review_comment_message": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "review_creation_date": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "review_answer_timestamp": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_orders_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_orders_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_orders_dataset",
+        "columns_converted": 8,
+        "columns": {
+          "order_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "customer_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_status": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_purchase_timestamp": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_approved_at": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_delivered_carrier_date": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_delivered_customer_date": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "order_estimated_delivery_date": {
+            "original_dtype": "object",
+            "target_dtype": "DATETIME",
+            "resulting_dtype": "datetime64[ns]",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_products_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_products_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_products_dataset",
+        "columns_converted": 9,
+        "columns": {
+          "product_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_category_name": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_name_lenght": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_description_lenght": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_photos_qty": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_weight_g": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_length_cm": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_height_cm": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_width_cm": {
+            "original_dtype": "float64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "olist_sellers_dataset": {
+      "column_standardization": {
+        "dataset_name": "olist_sellers_dataset",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "olist_sellers_dataset",
+        "columns_converted": 4,
+        "columns": {
+          "seller_id": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "seller_zip_code_prefix": {
+            "original_dtype": "int64",
+            "target_dtype": "INTEGER",
+            "resulting_dtype": "Int64",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "seller_city": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "seller_state": {
+            "original_dtype": "object",
+            "target_dtype": "CATEGORICAL",
+            "resulting_dtype": "category",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    },
+    "product_category_name_translation": {
+      "column_standardization": {
+        "dataset_name": "product_category_name_translation",
+        "columns_renamed": 0,
+        "column_renames": {},
+        "duplicate_name_conflicts_resolved": []
+      },
+      "datatype_standardization": {
+        "dataset_name": "product_category_name_translation",
+        "columns_converted": 2,
+        "columns": {
+          "product_category_name": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          },
+          "product_category_name_english": {
+            "original_dtype": "object",
+            "target_dtype": "STRING",
+            "resulting_dtype": "string",
+            "conversion_failures": 0,
+            "success_rate_percentage": 100.0,
+            "inference_used": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -40,7 +40,7 @@ from src.database.database_validator import DatabaseValidator
 from src.database.schema_builder import SchemaBuilder, TableSchema
 from src.database.sql_executor import SQLExecutor
 from src.database.transaction_manager import TransactionManager
-from src.main import DatasetDiscoveryService
+from src.application.dataset_discovery.service import DatasetDiscoveryService
 from src.utils.file_loader import FileLoader, FileLoaderError
 from src.utils.logger import get_logger
 

@@ -1,6 +1,6 @@
 Data Profiling Summary — olist_geolocation_dataset
-Run: 20260805_160735
-Generated at: 2026-08-05T16:07:40.193761
+Run: 20260817_100308
+Generated at: 2026-08-17T10:03:13.672713
 ============================================================
 
 OVERVIEW

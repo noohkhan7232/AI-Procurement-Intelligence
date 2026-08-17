@@ -1,0 +1,151 @@
+{
+  "profile": {
+    "dataset_name": "olist_sellers_dataset",
+    "overview": {
+      "row_count": 3095,
+      "column_count": 4,
+      "column_names": [
+        "seller_id",
+        "seller_zip_code_prefix",
+        "seller_city",
+        "seller_state"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 616671,
+      "memory_usage_mb": 0.5881
+    },
+    "columns": {
+      "seller_id": {
+        "name": "seller_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 3095,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "9e25199f6ef7e7c347120ff175652c3b": 1,
+            "3442f8959a84dea7ee197c632cb2df15": 1,
+            "d1b65fc7debc3361ea86b5f14c68d2e2": 1,
+            "ce3ad9de960102d0677a81f5d0bb7b2d": 1,
+            "c0f3eea2e14555b6faeea3dd58c1b1c3": 1,
+            "51a04a8a6bdcb23deccc82b0b80742cf": 1,
+            "c240c4061717ac1806ae6ee72be3533b": 1,
+            "63704069d9bd3a75c1cf59babe56004a": 1,
+            "747e73c01a4593d4cf60dcf970fd2689": 1,
+            "9e6967d3cf386d284251784b18ccb485": 1
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "seller_zip_code_prefix": {
+        "name": "seller_zip_code_prefix",
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 2246,
+        "unique_percentage": 72.57,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 1001.0,
+          "max": 99730.0,
+          "mean": 32291.059450726978,
+          "median": 14940.0,
+          "std": 32713.453829509002,
+          "q25": 7093.5,
+          "q75": 64552.5,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "seller_city": {
+        "name": "seller_city",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 611,
+        "unique_percentage": 19.74,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "sao paulo": 694,
+            "curitiba": 127,
+            "rio de janeiro": 96,
+            "belo horizonte": 68,
+            "ribeirao preto": 52,
+            "guarulhos": 50,
+            "ibitinga": 49,
+            "santo andre": 45,
+            "campinas": 41,
+            "maringa": 40
+          },
+          "min_length": 2,
+          "max_length": 40,
+          "average_length": 10.17
+        }
+      },
+      "seller_state": {
+        "name": "seller_state",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 23,
+        "unique_percentage": 0.74,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "SP": 1849,
+            "PR": 349,
+            "MG": 244,
+            "SC": 190,
+            "RJ": 171,
+            "RS": 129,
+            "GO": 40,
+            "DF": 30,
+            "ES": 23,
+            "BA": 19
+          },
+          "min_length": 2,
+          "max_length": 2,
+          "average_length": 2.0
+        }
+      }
+    },
+    "primary_key_candidates": [
+      "seller_id"
+    ],
+    "foreign_key_candidates": [
+      "seller_zip_code_prefix"
+    ],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_sellers_dataset",
+    "scores": {
+      "completeness_score": 100.0,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 100.0
+    },
+    "warnings": [
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "seller_id",
+        "message": "Column 'seller_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 3095,
+          "unique_percentage": 100.0
+        }
+      }
+    ],
+    "warning_count": 1
+  },
+  "generated_at": "2026-08-17T10:03:19.247885",
+  "run_timestamp": "20260817_100308"
+}

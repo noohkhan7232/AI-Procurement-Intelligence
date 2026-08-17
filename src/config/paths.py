@@ -108,6 +108,17 @@ class ProjectPaths:
             recently generated set of cleaning reports.
         cleaning_runs_dir: Directory containing one immutable, timestamped
             subfolder per historical cleaning execution.
+        database_reports_dir: Directory for database ETL and executor reports.
+        database_latest_dir: Directory always containing only the most
+            recently generated set of database reports.
+        database_runs_dir: Directory containing one immutable, timestamped
+            subfolder per historical database execution run.
+        simulation_reports_dir: Directory for transaction simulation reports.
+        simulation_latest_dir: Directory always containing only the most
+            recently generated set of simulation reports.
+        simulation_runs_dir: Directory containing one immutable, timestamped
+            subfolder per historical simulation execution run.
+        simulation_data_dir: Directory containing generated transaction datasets.
         logs_dir: Directory containing rotating application log files.
         database_dir: Directory containing local database files (e.g. SQLite).
         sql_dir: Directory containing SQL scripts/migrations.
@@ -119,6 +130,7 @@ class ProjectPaths:
     processed_data_dir: Path = field(init=False)
     interim_data_dir: Path = field(init=False)
     synthetic_data_dir: Path = field(init=False)
+    simulation_data_dir: Path = field(init=False)
     reports_dir: Path = field(init=False)
     profiling_reports_dir: Path = field(init=False)
     profiling_latest_dir: Path = field(init=False)
@@ -126,6 +138,12 @@ class ProjectPaths:
     cleaning_reports_dir: Path = field(init=False)
     cleaning_latest_dir: Path = field(init=False)
     cleaning_runs_dir: Path = field(init=False)
+    database_reports_dir: Path = field(init=False)
+    database_latest_dir: Path = field(init=False)
+    database_runs_dir: Path = field(init=False)
+    simulation_reports_dir: Path = field(init=False)
+    simulation_latest_dir: Path = field(init=False)
+    simulation_runs_dir: Path = field(init=False)
     logs_dir: Path = field(init=False)
     database_dir: Path = field(init=False)
     sql_dir: Path = field(init=False)
@@ -142,6 +160,7 @@ class ProjectPaths:
         object.__setattr__(self, "processed_data_dir", self.data_dir / "processed")
         object.__setattr__(self, "interim_data_dir", self.data_dir / "interim")
         object.__setattr__(self, "synthetic_data_dir", self.data_dir / "synthetic")
+        object.__setattr__(self, "simulation_data_dir", self.synthetic_data_dir / "simulation")
         object.__setattr__(self, "reports_dir", self.root / "reports")
         object.__setattr__(
             self, "profiling_reports_dir", self.reports_dir / "profiling"
@@ -161,6 +180,24 @@ class ProjectPaths:
         object.__setattr__(
             self, "cleaning_runs_dir", self.cleaning_reports_dir / "runs"
         )
+        object.__setattr__(
+            self, "database_reports_dir", self.reports_dir / "database"
+        )
+        object.__setattr__(
+            self, "database_latest_dir", self.database_reports_dir / "latest"
+        )
+        object.__setattr__(
+            self, "database_runs_dir", self.database_reports_dir / "runs"
+        )
+        object.__setattr__(
+            self, "simulation_reports_dir", self.reports_dir / "simulation"
+        )
+        object.__setattr__(
+            self, "simulation_latest_dir", self.simulation_reports_dir / "latest"
+        )
+        object.__setattr__(
+            self, "simulation_runs_dir", self.simulation_reports_dir / "runs"
+        )
         object.__setattr__(self, "logs_dir", self.root / "logs")
         object.__setattr__(self, "database_dir", self.root / "database")
         object.__setattr__(self, "sql_dir", self.root / "sql")
@@ -179,6 +216,7 @@ class ProjectPaths:
             self.processed_data_dir,
             self.interim_data_dir,
             self.synthetic_data_dir,
+            self.simulation_data_dir,
             self.reports_dir,
             self.profiling_reports_dir,
             self.profiling_latest_dir,
@@ -186,6 +224,12 @@ class ProjectPaths:
             self.cleaning_reports_dir,
             self.cleaning_latest_dir,
             self.cleaning_runs_dir,
+            self.database_reports_dir,
+            self.database_latest_dir,
+            self.database_runs_dir,
+            self.simulation_reports_dir,
+            self.simulation_latest_dir,
+            self.simulation_runs_dir,
             self.logs_dir,
             self.database_dir,
             self.sql_dir,

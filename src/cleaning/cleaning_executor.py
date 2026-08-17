@@ -37,7 +37,7 @@ from typing import Any
 
 from src.cleaning.data_cleaner import CleaningResult, DataCleaner, DataCleaningConfig
 from src.config.paths import ProjectPaths, get_project_paths
-from src.main import DatasetDiscoveryService
+from src.application.dataset_discovery.service import DatasetDiscoveryService
 from src.utils.cleaning_logger import CleaningLogger
 from src.utils.file_loader import FileLoader, FileLoaderError
 from src.utils.logger import get_logger
@@ -774,4 +774,3 @@ __all__ = [
 ]
 
 
-#  sare gama srudtybkjnl

@@ -1,0 +1,32 @@
+{
+  "start_timestamp": "2026-08-17T10:01:36.707942",
+  "end_timestamp": "2026-08-17T10:01:37.076171",
+  "duration_seconds": 0.3684,
+  "scale_profile": "small",
+  "total_records_generated": 6519,
+  "tps": 17697.75,
+  "records_by_entity": {
+    "purchase_orders": 200,
+    "supplier_invoices": 200,
+    "supplier_payments": 178,
+    "sales_orders": 300,
+    "customer_invoices": 300,
+    "customer_payments": 300,
+    "inventory_movements": 400,
+    "expense_claims": 150,
+    "payroll_records": 600,
+    "fixed_assets": 40,
+    "business_events": 3851
+  },
+  "anomalies_injected": 4,
+  "anomalies_by_type": {
+    "PO_INVOICE_MISMATCH": 2,
+    "UNUSUAL_EXPENSE": 2
+  },
+  "validation": {
+    "total_checks": 704,
+    "passed_checks": 704,
+    "failed_checks": 0,
+    "overall_valid": true
+  }
+}

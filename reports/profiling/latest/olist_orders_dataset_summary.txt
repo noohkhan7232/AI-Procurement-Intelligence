@@ -1,6 +1,6 @@
 Data Profiling Summary — olist_orders_dataset
-Run: 20260805_160735
-Generated at: 2026-08-05T16:07:44.759578
+Run: 20260817_100308
+Generated at: 2026-08-17T10:03:18.872230
 ============================================================
 
 OVERVIEW

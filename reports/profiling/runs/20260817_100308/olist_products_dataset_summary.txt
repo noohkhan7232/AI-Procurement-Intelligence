@@ -1,0 +1,23 @@
+Data Profiling Summary — olist_products_dataset
+Run: 20260817_100308
+Generated at: 2026-08-17T10:03:19.203671
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+Rows: 32951
+Columns: 9
+Duplicate rows: 0 (0.0%)
+Memory usage: 6.2966 MB
+
+QUALITY SCORES
+------------------------------------------------------------
+Completeness: 99.17
+Uniqueness:   100.0
+Consistency:  100.0
+Validity:     100.0
+Overall:      99.75
+
+WARNINGS (1)
+------------------------------------------------------------
+[LOW] HIGH_CARDINALITY (product_id): Column 'product_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.

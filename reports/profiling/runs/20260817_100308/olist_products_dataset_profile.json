@@ -1,0 +1,248 @@
+{
+  "profile": {
+    "dataset_name": "olist_products_dataset",
+    "overview": {
+      "row_count": 32951,
+      "column_count": 9,
+      "column_names": [
+        "product_id",
+        "product_category_name",
+        "product_name_lenght",
+        "product_description_lenght",
+        "product_photos_qty",
+        "product_weight_g",
+        "product_length_cm",
+        "product_height_cm",
+        "product_width_cm"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 6602426,
+      "memory_usage_mb": 6.2966
+    },
+    "columns": {
+      "product_id": {
+        "name": "product_id",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 32951,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "106392145fca363410d287a815be6de4": 1,
+            "1e9e8ef04dbcff4541ed26657ea517e5": 1,
+            "3aa071139cb16b67ca9e5dea641aaa2f": 1,
+            "96bd76ec8810374ed1b65e291975717f": 1,
+            "cef67bcfe19066a932b7673e239eb23d": 1,
+            "9dc1a7de274444849c219cff195d0b71": 1,
+            "41d3672d4792049fa1779bb35283ed13": 1,
+            "1060d9ab6b911bfce1439c25afcd790b": 1,
+            "6f79d50d852c044e3f7f0954d13aeacf": 1,
+            "0bf1dea484fbb8cdfa09e2767ce30574": 1
+          },
+          "min_length": 32,
+          "max_length": 32,
+          "average_length": 32.0
+        }
+      },
+      "product_category_name": {
+        "name": "product_category_name",
+        "dtype": "object",
+        "missing_count": 610,
+        "missing_percentage": 1.85,
+        "unique_count": 73,
+        "unique_percentage": 0.23,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "cama_mesa_banho": 3029,
+            "esporte_lazer": 2867,
+            "moveis_decoracao": 2657,
+            "beleza_saude": 2444,
+            "utilidades_domesticas": 2335,
+            "automotivo": 1900,
+            "informatica_acessorios": 1639,
+            "brinquedos": 1411,
+            "relogios_presentes": 1329,
+            "telefonia": 1134
+          },
+          "min_length": 3,
+          "max_length": 46,
+          "average_length": 14.96
+        }
+      },
+      "product_name_lenght": {
+        "name": "product_name_lenght",
+        "dtype": "float64",
+        "missing_count": 610,
+        "missing_percentage": 1.85,
+        "unique_count": 66,
+        "unique_percentage": 0.2,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 5.0,
+          "max": 76.0,
+          "mean": 48.47694876472589,
+          "median": 51.0,
+          "std": 10.245740725237239,
+          "q25": 42.0,
+          "q75": 57.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "product_description_lenght": {
+        "name": "product_description_lenght",
+        "dtype": "float64",
+        "missing_count": 610,
+        "missing_percentage": 1.85,
+        "unique_count": 2960,
+        "unique_percentage": 9.15,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 4.0,
+          "max": 3992.0,
+          "mean": 771.4952846232337,
+          "median": 595.0,
+          "std": 635.1152246349538,
+          "q25": 339.0,
+          "q75": 972.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "product_photos_qty": {
+        "name": "product_photos_qty",
+        "dtype": "float64",
+        "missing_count": 610,
+        "missing_percentage": 1.85,
+        "unique_count": 19,
+        "unique_percentage": 0.06,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 1.0,
+          "max": 20.0,
+          "mean": 2.1889861166939797,
+          "median": 1.0,
+          "std": 1.7367656379315446,
+          "q25": 1.0,
+          "q75": 3.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "product_weight_g": {
+        "name": "product_weight_g",
+        "dtype": "float64",
+        "missing_count": 2,
+        "missing_percentage": 0.01,
+        "unique_count": 2204,
+        "unique_percentage": 6.69,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 0.0,
+          "max": 40425.0,
+          "mean": 2276.4724877841513,
+          "median": 700.0,
+          "std": 4282.038730977007,
+          "q25": 300.0,
+          "q75": 1900.0,
+          "zero_count": 4,
+          "negative_count": 0
+        }
+      },
+      "product_length_cm": {
+        "name": "product_length_cm",
+        "dtype": "float64",
+        "missing_count": 2,
+        "missing_percentage": 0.01,
+        "unique_count": 99,
+        "unique_percentage": 0.3,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 7.0,
+          "max": 105.0,
+          "mean": 30.81507784758263,
+          "median": 25.0,
+          "std": 16.914458054065967,
+          "q25": 18.0,
+          "q75": 38.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "product_height_cm": {
+        "name": "product_height_cm",
+        "dtype": "float64",
+        "missing_count": 2,
+        "missing_percentage": 0.01,
+        "unique_count": 102,
+        "unique_percentage": 0.31,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 2.0,
+          "max": 105.0,
+          "mean": 16.937661234028347,
+          "median": 13.0,
+          "std": 13.637554061749494,
+          "q25": 8.0,
+          "q75": 21.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      },
+      "product_width_cm": {
+        "name": "product_width_cm",
+        "dtype": "float64",
+        "missing_count": 2,
+        "missing_percentage": 0.01,
+        "unique_count": 95,
+        "unique_percentage": 0.29,
+        "semantic_type": "numeric",
+        "statistics": {
+          "min": 6.0,
+          "max": 118.0,
+          "mean": 23.196728277034204,
+          "median": 20.0,
+          "std": 12.079047453227835,
+          "q25": 15.0,
+          "q75": 30.0,
+          "zero_count": 0,
+          "negative_count": 0
+        }
+      }
+    },
+    "primary_key_candidates": [
+      "product_id"
+    ],
+    "foreign_key_candidates": [],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "olist_products_dataset",
+    "scores": {
+      "completeness_score": 99.17,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 99.75
+    },
+    "warnings": [
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "product_id",
+        "message": "Column 'product_id' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 32951,
+          "unique_percentage": 100.0
+        }
+      }
+    ],
+    "warning_count": 1
+  },
+  "generated_at": "2026-08-17T10:03:19.110419",
+  "run_timestamp": "20260817_100308"
+}

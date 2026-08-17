@@ -1,0 +1,112 @@
+{
+  "profile": {
+    "dataset_name": "product_category_name_translation",
+    "overview": {
+      "row_count": 71,
+      "column_count": 2,
+      "column_names": [
+        "product_category_name",
+        "product_category_name_english"
+      ],
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "memory_usage_bytes": 9436,
+      "memory_usage_mb": 0.009
+    },
+    "columns": {
+      "product_category_name": {
+        "name": "product_category_name",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 71,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "beleza_saude": 1,
+            "informatica_acessorios": 1,
+            "automotivo": 1,
+            "cama_mesa_banho": 1,
+            "moveis_decoracao": 1,
+            "esporte_lazer": 1,
+            "perfumaria": 1,
+            "utilidades_domesticas": 1,
+            "telefonia": 1,
+            "relogios_presentes": 1
+          },
+          "min_length": 3,
+          "max_length": 46,
+          "average_length": 16.97
+        }
+      },
+      "product_category_name_english": {
+        "name": "product_category_name_english",
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 71,
+        "unique_percentage": 100.0,
+        "semantic_type": "categorical",
+        "statistics": {
+          "top_values": {
+            "health_beauty": 1,
+            "computers_accessories": 1,
+            "auto": 1,
+            "bed_bath_table": 1,
+            "furniture_decor": 1,
+            "sports_leisure": 1,
+            "perfumery": 1,
+            "housewares": 1,
+            "telephony": 1,
+            "watches_gifts": 1
+          },
+          "min_length": 3,
+          "max_length": 39,
+          "average_length": 16.07
+        }
+      }
+    },
+    "primary_key_candidates": [
+      "product_category_name",
+      "product_category_name_english"
+    ],
+    "foreign_key_candidates": [],
+    "plugins": {}
+  },
+  "quality": {
+    "dataset_name": "product_category_name_translation",
+    "scores": {
+      "completeness_score": 100.0,
+      "uniqueness_score": 100.0,
+      "consistency_score": 100.0,
+      "validity_score": 100.0,
+      "overall_score": 100.0
+    },
+    "warnings": [
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "product_category_name",
+        "message": "Column 'product_category_name' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 71,
+          "unique_percentage": 100.0
+        }
+      },
+      {
+        "warning_type": "HIGH_CARDINALITY",
+        "severity": "LOW",
+        "column": "product_category_name_english",
+        "message": "Column 'product_category_name_english' has high cardinality (100.0% unique values); consider whether it is an identifier rather than a categorical field.",
+        "details": {
+          "unique_count": 71,
+          "unique_percentage": 100.0
+        }
+      }
+    ],
+    "warning_count": 2
+  },
+  "generated_at": "2026-08-17T10:03:19.370120",
+  "run_timestamp": "20260817_100308"
+}
